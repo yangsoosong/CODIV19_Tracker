@@ -15,8 +15,13 @@
 <p>This application lists the current number of cases reported across the globe.</p>
 
 <div class="jumbotron">
-    <h1 class="display-4" th:text="${TotalReportedCases}"></h1>
+    <h1 class="display-4" th:text="${totalReportedCases}"></h1>
     <p class="lead">Total cases reported as of today</p>
+    <hr class="my-4">
+    <span>New cases reported since previous day</span>
+    <span th:text="${totalNewCases}"></span>
+
+
 <!--    <hr class="my-4">-->
 <!--    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
 <!--    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>-->
