@@ -20,20 +20,24 @@
 <!--    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
 <!--    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>-->
 </div>
+<div class="container">
 
 <table>
     <tr>
         <th>STATE</th>
         <th>COUNTRY</th>
         <th>TOTAL CASES REPORTED</th>
+        <th>CHANGES SINCE LAST DAY</th>
     </tr>
     <tr th:each="locationStat : ${LocationStats}">
         <td th:text="${locationStat.state}"></td>
         <td th:text="${locationStat.country}"></td>
         <td th:text="${locationStat.latestTotalCases}">0</td>
+        <td th:text="${locationStat.diffFromPrevDay}">0</td>
     </tr>
 </table>
 
+</div>
 </body>
 
 </html>
