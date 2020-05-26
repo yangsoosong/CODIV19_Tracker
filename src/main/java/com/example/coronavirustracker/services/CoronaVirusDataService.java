@@ -22,11 +22,15 @@ import javax.annotation.PostConstruct;
  * Created by yangsoo on 5/23/20. Make a call to url and fetch the data.
  */
 @Service
-public class CoranaVirusDataService {
+public class CoronaVirusDataService {
 
     private static String CoronavirusURL = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv";
 
     private List<LocationStats> allStats = new ArrayList<>();
+
+    public List<LocationStats> getAllStats() {
+        return allStats;
+    }
 
     // After creating service, execute this
     @PostConstruct
