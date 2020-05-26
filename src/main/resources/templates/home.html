@@ -5,11 +5,21 @@
 <head>
     <title>Coronavirus Tracker</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
 
-<!--<p th:text="${testName}"></p>-->
+<h1>Coronavirus Tracker Application</h1>
+<p>This application lists the current number of cases reported across the globe.</p>
+
+<div class="jumbotron">
+    <h1 class="display-4" th:text="${TotalReportedCases}"></h1>
+    <p class="lead">Total cases reported as of today</p>
+<!--    <hr class="my-4">-->
+<!--    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
+<!--    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>-->
+</div>
 
 <table>
     <tr>
