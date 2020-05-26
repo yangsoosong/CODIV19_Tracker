@@ -1,2 +1,2 @@
 # CODIV19_Tracker
-Build a CODIV19 tracker application with Java and Spring Boot (Thymeleaf)
+Build a CODIV19 tracker application with Java, Spring Boot (Thymeleaf) and Bootstrap.
